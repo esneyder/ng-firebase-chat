@@ -10,13 +10,12 @@
   <script src="js/lib/angular/angular-route.min.js" charset="utf-8"></script>
   <script src="js/lib/angular/angular-animate.min.js" charset="utf-8"></script>
   <script src="js/app.js" charset="utf-8"></script>
+  <script src="js/controllers/login.js" charset="utf-8"></script>
 </head>
 <body>
-  Hey Buddy!!
 <header></header>
-<div class="page" ng-controller="appController">
-  <main class="cf">
-    {{message}}
+<div class="page">
+  <main class="cf" ng-view>
   </main>
 </div>
 
