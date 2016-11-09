@@ -1,0 +1,30 @@
+{
+  "name": "ng-reg-login",
+  "version": "1.0.0",
+  "description": "registration-login component using firebase and angularjs",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sathyalog/ng-reg-login.git"
+  },
+  "keywords": [
+    "angularjs",
+    "registration",
+    "and",
+    "login",
+    "component"
+  ],
+  "author": "sathya",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/sathyalog/ng-reg-login/issues"
+  },
+  "homepage": "https://github.com/sathyalog/ng-reg-login#readme",
+  "devDependencies": {
+    "gulp": "^3.9.1",
+    "gulp-util": "^3.0.7",
+    "gulp-webserver": "^0.9.1"
+  }
+}
