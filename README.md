@@ -8,4 +8,5 @@ https://www.npmjs.com/package/httpserver
 Just install it globally like npm install -g httpserver and go to your project folder(ng-reg-login/build) and open cmd prompt -> run *httpserver*
 
 You can also run the project by
-npm install and gulp commands.
+
+*npm install* and *gulp* commands.
