@@ -1,8 +1,19 @@
-var myApp = angular.module('sathyaApp',['ngRoute']);
+var myApp = angular.module('sathyaApp',['ngRoute','firebase']);
 
 // myApp.controller('appController',['$scope',function($scope){
 //   $scope.message = "Welcome to Angular Registration-Login component.";
 // }])
+
+// (function(){
+//   var config = {
+//     apiKey: "AIzaSyAJeGsL7KtKHdaFeTSiLnVRE3x7-ovGpyo",
+//     authDomain: "sathya-ngreglogin.firebaseapp.com",
+//     databaseURL: "https://sathya-ngreglogin.firebaseio.com/",
+//     storageBucket: "gs://sathya-ngreglogin.appspot.com",
+//     messagingSenderId: "<SENDER_ID>",
+//   };
+//   firebase.initializeApp(config);
+// }());
 
 myApp.config(['$routeProvider',function($routeProvider){
   $routeProvider.

@@ -10,12 +10,34 @@
   <script src="js/lib/angular/angular-route.min.js" charset="utf-8"></script>
   <script src="js/lib/angular/angular-animate.min.js" charset="utf-8"></script>
 
+  <!-- Firebase -->
+  <script src="https://www.gstatic.com/firebasejs/3.3.0/firebase.js"></script>
+
+  <!-- AngularFire -->
+  <script src="https://cdn.firebase.com/libs/angularfire/2.0.1/angularfire.min.js"></script>
+
+  <script>
+  // Initialize Firebase
+  // TODO: Replace with your project's customized code snippet
+  var config = {
+    apiKey: "AIzaSyAJeGsL7KtKHdaFeTSiLnVRE3x7-ovGpyo",
+    authDomain: "sathya-ngreglogin.firebaseapp.com",
+    databaseURL: "https://sathya-ngreglogin.firebaseio.com/",
+    storageBucket: "gs://sathya-ngreglogin.appspot.com",
+    messagingSenderId: "<SENDER_ID>",
+  };
+  firebase.initializeApp(config);
+
+</script>
+
   <script src="js/app.js" charset="utf-8"></script>
   <script src="js/controllers/login.js" charset="utf-8"></script>
   <script src="js/controllers/register.js" charset="utf-8"></script>
 </head>
 <body>
-<header></header>
+<header>
+  <nav class="cf" ng-include="'views/nav.html'"></nav>
+</header>
 <div class="page">
   <main class="cf" ng-view>
   </main>
