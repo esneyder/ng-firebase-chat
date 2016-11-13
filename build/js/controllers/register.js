@@ -1,6 +1,5 @@
 myApp.controller('registrationController',['$scope','$state',function($scope,$state){
   //$scope.message = "Welcome to Register-Login Component";
-
   $scope.register = function(){
     //$scope.message = "Welcome"+ $scope.user.firstname;
     var email = $scope.user.email;

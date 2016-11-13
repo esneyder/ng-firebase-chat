@@ -52,10 +52,6 @@ myApp.config(['$stateProvider','$urlRouterProvider',function($stateProvider, $ur
               templateUrl: 'views/dashboard.html',
               controller:'dashboardController'
         })
-  .state('/', {
-              url: '/login',
-              templateUrl: 'views/login.html',
-              controller:'loginController'
-        })
+  $urlRouterProvider.otherwise("login");
 
 }]);

@@ -118,6 +118,8 @@ h1, h2, h3, h4, h5, h6 {
 a {
   color: #2D8BCF;
   font-family: Lato, 'Helvetica Nueue', Helvetica, Arial, sans-serif;
+  cursor: pointer;
+  cursor: hand;
 }
 
 header {
