@@ -6,6 +6,12 @@ myApp.controller('loginController',['$scope','$firebaseObject','$state','appServ
   //   'display': 'popup'
   // });
   $scope.appToken = appService.authToken = localStorage.getItem("token");
+  /****force logout if user try to navigate to login page**/
+  if($scope.appToken){
+    localStorage.removeItem("token");
+    firebase.auth().signOut();
+  }
+  /****force logout if user try to navigate to login page**/
   $scope.updateMsg = function(){
     $scope.$apply(function () {
           $scope.message = appService.errorMsg;
