@@ -1,3 +1,8 @@
+<header>
+  <nav class="cf" ng-include="'views/nav.html'"></nav>
+</header>
+<div class="page">
+  <main class="cf">
 <section class="card login">
   <form name="myform" ng-submit="login()"
     novalidate>
@@ -27,3 +32,5 @@
 <img style="width:190px;height:35px;cursor:pointer;" ng-click = "googleSignin()" src="images/Google-Plus-icon.png"/><br/>
 <img style="width:190px;height:40px;cursor:pointer;" ng-click = "facebookSignin()" src="images/facebook-icon.png"/>
 </section>
+</main>
+</div>

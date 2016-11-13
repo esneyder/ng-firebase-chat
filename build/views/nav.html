@@ -1,5 +1,8 @@
+<div>
   <div class="branding"><a ng-href="#/login">AngularJS</a></div>
   <ul>
-    <li><a ng-href="#/login">Login</a></li>
-    <li><a ng-href="#/register">Register</a></li>
+    <li><a ng-href="#/login" ng-hide="appToken">Login</a></li>
+    <li><a ng-href="#/register" ng-hide="appToken">Register</a></li>
+    <li><a ng-click="logout()" ng-show="appToken">Logout</a></li>
   </ul>
+</div>

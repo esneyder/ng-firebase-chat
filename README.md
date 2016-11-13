@@ -1,5 +1,5 @@
 # ng-reg-login
-A basic registration and login component using google firebase and angular 1.5
+A basic registration and login component using **google firebase and angular 1.5**.
 
 To run this component, you need *httpserver* npm module.
 

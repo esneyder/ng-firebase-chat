@@ -42,14 +42,17 @@
   <script src="js/controllers/nav.js" charset="utf-8"></script>
   <script src="js/services/service.js" charset="utf-8"></script>
 </head>
-<body>
-<header>
+<body ui-view>
+<!-- <header ng-controller="loginController" ng-hide="appToken">
   <nav class="cf" ng-include="'views/nav.html'"></nav>
-</header>
-<div class="page">
+</header> -->
+<!-- <header ng-controller="dashboardController" ng-show="appToken">
+<nav class="cf" ng-include="'views/dashboardnav.html'" ></nav>
+</header> -->
+<!-- <div class="page">
   <main class="cf" ui-view>
   </main>
-</div>
+</div> -->
 
 </body>
 </html>
