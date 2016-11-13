@@ -5,7 +5,7 @@
     <div class="textintro">
       <h1>Hi there!</h1>
       <p>Log-in to access the awesomeness!</p>
-      <p>{{message}} </p>
+      <!-- <p>{{message}} </p> -->
       <!-- <pre>
         {{object | json}}
       </pre> -->
@@ -17,11 +17,13 @@
       <input type="password" name="password" placeholder="Password" ng-model="user.pwd" ng-required="true" minlength="6">
       <p class="error validationerror" ng-show="myform.password.$invalid && myform.password.$touched">Password required. </p>
     </fieldset>
-
+    <div class="bs-callout bs-callout-danger" ng-show="message">{{message}}</div>
     <button type="submit" class="btn" ng-disabled="myform.$invalid">Login</button>
     <!-- <p>or <a ng-href="#/register">register</a></p> -->
   </form>
-
+  <br/>
   <p><strong> - OR - </strong></p>
-<img style="width:190px;height:35px;cursor:pointer;" ng-click = "googleSignin()" src="images/Google-Plus-icon.png"/>
+  <br/>
+<img style="width:190px;height:35px;cursor:pointer;" ng-click = "googleSignin()" src="images/Google-Plus-icon.png"/><br/>
+<img style="width:190px;height:40px;cursor:pointer;" ng-click = "facebookSignin()" src="images/facebook-icon.png"/>
 </section>
