@@ -1,5 +1,5 @@
 # ng-firebase-chat
-A basic firebase chat appplication with registration and login component using **google firebase and angular 1.5**.
+A basic firebase chat application with registration and login component using **google firebase and angular 1.5**.
 
 To run this component, you need *httpserver* npm module.
 

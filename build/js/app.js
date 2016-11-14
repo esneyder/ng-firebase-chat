@@ -48,10 +48,21 @@ myApp.config(['$stateProvider','$urlRouterProvider',function($stateProvider, $ur
             controller:'registrationController'
         })
   .state('dashboard', {
-              url: '/dashboard',
+              url: '/dashboard/',
               templateUrl: 'views/dashboard.html',
               controller:'dashboardController'
         })
-  $urlRouterProvider.otherwise("login");
+  // .state('dashboard.detail', {
+  //         url: 'dashboard/:provider',
+  //         templateUrl: function (stateParams){
+  //             return 'views/dashboard/' + stateParams.provider + '.html';
+  //         },
+  //         controller: 'dashboardController'
+  // })
+  // .state('notFound', {
+  //       url: '{path:.*}',
+  //       templateUrl: 'views/login.html'
+  //   });
+  //$urlRouterProvider.otherwise("login");
 
 }]);
