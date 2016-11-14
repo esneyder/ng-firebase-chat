@@ -1,5 +1,5 @@
-# ng-reg-login
-A basic registration and login component using **google firebase and angular 1.5**.
+# ng-firebase-chat
+A basic firebase chat appplication with registration and login component using **google firebase and angular 1.5**.
 
 To run this component, you need *httpserver* npm module.
 
@@ -18,3 +18,6 @@ https://github.com/firebase/angularfire
 Also, you have to create an account and project in google firebase to access firebase backend in your project.
 
 Please find the screenshots in screenshots folder to work with firebase.
+
+#Firechat enabled
+You can chat with your friends once you logged in through email/google/facebook account.
