@@ -3,16 +3,8 @@ A basic firebase chat application with registration and login component using **
 
 Also **SingleSingOn with google and facebook accounts is enabled**.
 
-To run this component, you need *httpserver* npm module.
-
-https://www.npmjs.com/package/httpserver
-
-Just install it globally like npm install -g httpserver and go to your project folder(ng-reg-login/build) and open cmd prompt -> run *httpserver*
-
-You can also run the project by
-
-*npm install* and *gulp* commands.
--> run *gulp*
+**npm install** and 
+-> run **gulp**
 
 We were using google firebase for login authentication and registrations as well. For this we gonna use angularfire node module.
 
