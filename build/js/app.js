@@ -4,17 +4,6 @@ var myApp = angular.module('sathyaApp',['ngRoute','firebase','ui.router']);
   $scope.message = "Welcome to Angular Registration-Login component.";
 }])
 
-(function(){
-  var config = {
-    apiKey: "AIzaSyAJeGsL7KtKHdaFeTSiLnVRE3x7-ovGpyo",
-    authDomain: "sathya-ngreglogin.firebaseapp.com",
-    databaseURL: "https://sathya-ngreglogin.firebaseio.com/",
-    storageBucket: "gs://sathya-ngreglogin.appspot.com",
-    messagingSenderId: "<SENDER_ID>",
-  };
-  firebase.initializeApp(config);
-}());
-
 myApp.config(['$routeProvider',function($routeProvider){
   $routeProvider.
   when('/login',{
@@ -36,6 +25,15 @@ myApp.config(['$routeProvider',function($routeProvider){
 */
 // Configured ui-router instead of ngRoute
 myApp.config(['$stateProvider','$urlRouterProvider',function($stateProvider, $urlRouterProvider){
+  $urlRouterProvider.when('/-KWTVx53Fxn4v2l66b-B', '/dashboard/')
+  .when('/-KWW8772Q1sfG7rZizI4','/dashboard')
+  .when('/-KW*','/dashboard')
+  .when('','/dashboard')
+  .when('/dashboard', function($state, appService){
+    if (appService.authToken === undefined) {
+        $state.go('login');
+    }
+  });
   $stateProvider
   .state('login', {
             url: '/login',
@@ -63,6 +61,6 @@ myApp.config(['$stateProvider','$urlRouterProvider',function($stateProvider, $ur
   //       url: '{path:.*}',
   //       templateUrl: 'views/login.html'
   //   });
-  //$urlRouterProvider.otherwise("login");
+  $urlRouterProvider.otherwise("dashboard");
 
 }]);

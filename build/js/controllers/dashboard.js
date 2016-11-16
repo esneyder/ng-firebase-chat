@@ -2,6 +2,9 @@ myApp.controller('dashboardController',['$scope','$state','appService',function(
   $scope.welcomeMsg = "Welcome to Chat App.";
   const provider = new firebase.auth.GoogleAuthProvider();
   $scope.appToken = appService.authToken = localStorage.getItem("token");
+  if(!$scope.appToken){
+    $scope.logout();
+  }
   $scope.logout = function(){
     firebase.auth().signOut()
 
