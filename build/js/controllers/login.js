@@ -2,9 +2,7 @@ myApp.controller('loginController',['$scope','$firebaseObject','$state','appServ
   //$scope.message = "Welcome to Register-Login Component";
   const provider = new firebase.auth.GoogleAuthProvider();
   const fbprovider = new firebase.auth.FacebookAuthProvider();
-  // fbprovider.setCustomParameters({
-  //   'display': 'popup'
-  // });
+
   $scope.appToken = appService.authToken = localStorage.getItem("token");
   /****force logout if user try to navigate to login page**/
   if($scope.appToken){
@@ -20,8 +18,6 @@ myApp.controller('loginController',['$scope','$firebaseObject','$state','appServ
 
   $scope.login=function(){
     var vm = this;
-
-    //$scope.error = "";
     var email = $scope.user.email;
     var pwd = $scope.user.pwd;
 
@@ -47,7 +43,6 @@ myApp.controller('loginController',['$scope','$firebaseObject','$state','appServ
         console.log(firebaseUser);
       }else{
         console.log('Not logged in');
-        //appService.authToken = false;
       }
     });
 
@@ -76,7 +71,6 @@ myApp.controller('loginController',['$scope','$firebaseObject','$state','appServ
       //var credential = error.credential;
       appService.errorMsg = error.message;
       $scope.updateMsg();
-      //appService.authToken = false;
       console.log(error.code)
       console.log(error.message)
    });
