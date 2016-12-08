@@ -13,6 +13,17 @@
   <script src="js/lib/angular/angular-ui-router.min.js" charset="utf-8"></script>
   <!-- <script src="js/lib/bootstrap/bootstrap.min.js" charset="utf-8"></script> -->
 
+<!-- load angular 2 dependencies scripts -->
+  <script src="js/lib/angular2/es6-shim.min.js"></script>
+  <script src="js/lib/angular2/system-polyfills.js"></script>
+  <script src="js/lib/angular2/angular2-polyfills.js"></script>
+  <script src="js/lib/angular2/system.src.js"></script>
+  <script src="js/lib/angular2/Rx.js"></script>
+  <script src="js/lib/angular2/angular2.dev.js"></script>
+
+  <!-- load system config -->
+
+
   <script src="js/lib/jquery.min.js"></script>
 
   <!-- Firebase -->
@@ -47,7 +58,13 @@
   <script src="js/controllers/dashboard.js" charset="utf-8"></script>
   <script src="js/services/service.js" charset="utf-8"></script>
 </head>
-<body ui-view>
+<body >
+  <div ui-view>
+
+  </div>
+  <!-- integrating angular2 components in my-app tag -->
+  <my-app>
+  </my-app>
 <!-- <header ng-controller="loginController" ng-hide="appToken">
   <nav class="cf" ng-include="'views/nav.html'"></nav>
 </header> -->
@@ -58,6 +75,31 @@
   <main class="cf" ui-view>
   </main>
 </div> -->
-
+<script>
+    System.config({
+      // map: {
+      //     rxjs: 'js/lib/angular2/Rx.js' // added this map section
+      // },
+      // packages: {
+      //     'app': {defaultExtension: 'js'},
+      //     'rxjs': { main: 'js/lib/angular2/Rx.js', defaultExtension: 'js' }// and added this to packages
+      // },
+      // // 'ts-md5': {
+      // //     defaultExtension: 'js'
+      // // },
+      // app: {
+      //   main: './js/boot.js'
+      //   //defaultExtension: 'js'
+      // },
+      packages: {
+        js: {
+          format: 'register',
+          defaultExtension: 'js'
+        }
+      }
+    });
+    System.import('./js/boot')
+      .then(null, console.error.bind(console));
+  </script>
 </body>
 </html>

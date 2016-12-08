@@ -665,3 +665,13 @@ border-color: #f0ad4e;
 background-color: #f0f7fd;
 border-color: #5bc0de;
 }
+.my-footer {
+  background-color: #ffffff;
+  height: 60px;
+  width:100%;
+  padding: 15px;
+  color: #1B7998;
+  position:absolute;
+  bottom:0;
+  text-align:center;
+}
