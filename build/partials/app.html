@@ -1,3 +1,15 @@
-<footer>
-    <!-- footer component will display here -->
-</footer>
+<note>
+  <div class="artistsearch">
+    <div class="card search">
+      <h3>Add Note</h3>
+      <input #newNote />
+      <button (click)="addNote(newNote.value); newNote.value=''">Add</button>
+    </div>
+  </div>
+
+  <ul class="artistlist cf">
+    <li *ngFor="#names of teams">
+      <span>{{names}}</span>
+    </li>
+  </ul>
+</note>

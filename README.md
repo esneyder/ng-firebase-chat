@@ -1,5 +1,5 @@
 # ng-firebase-chat
-A basic firebase chat application with registration and login component using **google firebase and angular 1.5** library. Also integrating angular2 components as well.
+A basic firebase chat application with registration and login component using **google firebase and angular 1.5** library. Also integrating angular2 components as well. Please find the screenshots attached.
 
 Also **SingleSingOn with google and facebook accounts is enabled**.
 
